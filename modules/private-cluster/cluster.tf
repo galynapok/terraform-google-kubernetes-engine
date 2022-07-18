@@ -56,6 +56,7 @@ resource "google_container_cluster" "primary" {
   monitoring_service = var.monitoring_service
   cluster_autoscaling {
     enabled = var.cluster_autoscaling.enabled
+    autoscaling_profile = var.autoscaling_profile
     dynamic "auto_provisioning_defaults" {
       for_each = var.cluster_autoscaling.enabled ? [1] : []
 
