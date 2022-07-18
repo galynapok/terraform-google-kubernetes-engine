@@ -499,3 +499,4 @@ variable "timeouts" {
     error_message = "Only create, update, delete timeouts can be specified."
   }
 }
+variable "autoscaling_profile" {}
