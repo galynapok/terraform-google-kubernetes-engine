@@ -500,4 +500,4 @@ variable "timeouts" {
   }
 }
 variable "autoscaling_profile" {}
-variable "notification_config" {}  
+variable "notification_config_topic" {}  
