@@ -35,7 +35,6 @@ resource "google_container_cluster" "primary" {
     pubsub {
       enabled = var.notification_config_topic != "" ? true : false
       topic   = var.notification_config_topic
-      notification_filter = ["SecurityBulletinEvent", "UpgradeEvent"]
     }
   }
   dynamic "network_policy" {
